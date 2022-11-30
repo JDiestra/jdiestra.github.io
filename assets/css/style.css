@@ -1061,7 +1061,7 @@ section .container {
   font-size: 20px;
   color: #fff;
   font-weight: 700;
-  margin: 10px 0 8px 68px;
+  margin: 10px 0 8px 0px;
 }
 
 .contact .info-box p {
@@ -1093,6 +1093,19 @@ section .container {
 .contact .php-email-form {
   padding: 30px;
   background: rgba(255, 255, 255, 0.08);
+}
+
+.contact .info-box .social-links2 a {
+  font-size: 40px;
+  display: inline-block;
+  color: #fff;
+  line-height: 1;
+  margin-right: 12px;
+  transition: 0.3s;
+}
+
+.contact .info-box .social-links2 a:hover {
+  color: #18d26e;
 }
 
 .contact .php-email-form .error-message {
