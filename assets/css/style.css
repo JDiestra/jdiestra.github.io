@@ -1091,6 +1091,7 @@ section .container {
 }
 
 .contact .php-email-form {
+  display: none;
   padding: 30px;
   background: rgba(255, 255, 255, 0.08);
 }
