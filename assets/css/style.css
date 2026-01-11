@@ -571,6 +571,24 @@ section .container {
   background: rgba(255, 255, 255, 0.12);
 }
 
+/* Specific grid tweaks for Skills */
+.skills-grid .icon-box {
+  justify-content: flex-start;
+  gap: 12px;
+  padding: 18px 20px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 8px;
+  min-height: 88px;
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.skills-grid .icon-box img {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+  padding-right: 0;
+}
+
 /*--------------------------------------------------------------
 # Testimonials
 --------------------------------------------------------------*/

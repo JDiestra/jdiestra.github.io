@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title">
+  <title>Angular</title>
+  <polygon fill="#dd0031" points="32 4 4 14 8 50 32 60 56 50 60 14 32 4"/>
+  <polygon fill="#c3002f" points="32 8 10 16 13.6 48 32 56 50.4 48 54 16 32 8"/>
+  <path fill="#ffffff" d="M32 15 19 44h6.3l2.6-6.6h8.2l2.6 6.6H45L32 15zm3 16.8h-6l3-7.4z"/>
+</svg>

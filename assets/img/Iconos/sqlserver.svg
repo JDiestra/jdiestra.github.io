@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title">
+  <title>SQL Server</title>
+  <path fill="#c8102e" d="M10 20c0 6 12 11 22 11s22-5 22-11-12-11-22-11S10 14 10 20Z"/>
+  <path fill="#a30d26" d="M10 20v8c0 6 12 11 22 11s22-5 22-11v-8c0 6-12 11-22 11S10 26 10 20Z"/>
+  <path fill="#f2f2f2" d="M10 28v8c0 6 12 11 22 11s22-5 22-11v-8c0 6-12 11-22 11S10 34 10 28Z"/>
+  <path fill="none" stroke="#c8102e" stroke-width="2" d="M18 24c3 2 8 4 14 4s11-2 14-4"/>
+  <path fill="none" stroke="#c8102e" stroke-width="2" d="M18 32c3 2 8 4 14 4s11-2 14-4"/>
+</svg>
