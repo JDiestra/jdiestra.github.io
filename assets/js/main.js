@@ -65,12 +65,15 @@
       let header = select('#header')
       let sections = select('section', true)
       let navlinks = select('#navbar .nav-link', true)
+      let targetHash = this.hash
 
       navlinks.forEach((item) => {
-        item.classList.remove('active')
+        if (item.getAttribute('href') == targetHash) {
+          item.classList.add('active')
+        } else {
+          item.classList.remove('active')
+        }
       })
-
-      this.classList.add('active')
 
       if (navbar.classList.contains('navbar-mobile')) {
         navbar.classList.remove('navbar-mobile')
@@ -79,7 +82,7 @@
         navbarToggle.classList.toggle('bi-x')
       }
 
-      if (this.hash == '#header') {
+      if (targetHash == '#header') {
         header.classList.remove('header-top')
         sections.forEach((item) => {
           item.classList.remove('section-show')
