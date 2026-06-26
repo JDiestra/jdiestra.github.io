@@ -28,8 +28,7 @@ body {
   background-color: var(--sanna-cream);
   color: var(--ink);
   position: relative;
-  background:
-    linear-gradient(90deg, rgba(245, 235, 215, 0.96) 0%, rgba(245, 235, 215, 0.96) 58%, rgba(225, 255, 215, 0.78) 58%, rgba(225, 255, 215, 0.78) 100%);
+  background: var(--sanna-cream);
 }
 
 body::before {
@@ -85,32 +84,11 @@ h6 {
 }
 
 #header::before {
-  content: "";
-  position: absolute;
-  width: min(430px, 34vw);
-  height: min(520px, 54vh);
-  right: 8vw;
-  top: 17vh;
-  border: 2px solid rgba(0, 175, 80, 0.55);
-  border-radius: 32px;
-  background:
-    linear-gradient(135deg, rgba(225, 255, 215, 0.92), rgba(255, 255, 255, 0.62)),
-    linear-gradient(0deg, transparent 0 48%, rgba(0, 175, 80, 0.18) 48% 52%, transparent 52% 100%);
-  box-shadow: var(--shadow);
-  z-index: -1;
+  display: none;
 }
 
 #header::after {
-  content: "AI";
-  position: absolute;
-  right: 12vw;
-  top: 28vh;
-  color: rgba(0, 175, 80, 0.11);
-  font-family: "Poppins", sans-serif;
-  font-size: clamp(120px, 16vw, 230px);
-  font-weight: 900;
-  line-height: 1;
-  z-index: -1;
+  display: none;
 }
 
 #header * {
@@ -649,7 +627,7 @@ section .container + .container {
 }
 
 .profile-highlights .row {
-  row-gap: 24px;
+  row-gap: 16px;
 }
 
 .profile-highlights .col-md-6 {
@@ -659,23 +637,28 @@ section .container + .container {
 
 .profile-highlights .count-box {
   display: grid;
-  grid-template-columns: 54px 1fr;
-  grid-template-rows: auto auto;
+  grid-template-columns: 42px 1fr;
+  grid-template-rows: auto;
+  align-items: center;
   align-content: center;
-  column-gap: 16px;
-  min-height: 132px;
-  padding: 26px 28px;
+  column-gap: 14px;
+  min-height: 78px;
+  padding: 18px 22px;
 }
 
 .profile-highlights .count-box i {
   position: static;
-  grid-row: 1 / 3;
   align-self: center;
-  transform: translateY(-18px);
+  transform: none;
+  width: 42px;
+  height: 42px;
+  font-size: 20px;
 }
 
 .profile-highlights .count-box span {
-  align-self: end;
+  align-self: center;
+  font-size: 20px;
+  line-height: 1.25;
   margin-top: 0;
 }
 
@@ -685,41 +668,43 @@ section .container + .container {
 }
 
 /*--------------------------------------------------------------
-# Skills
+# Positions
 --------------------------------------------------------------*/
-.skills .progress {
-  height: 60px;
-  display: block;
-  background: none;
-  border-radius: 0;
+.positions-content > [class*="col-"] {
+  display: flex;
 }
 
-.skills .progress .skill {
-  padding: 10px 0;
-  margin: 0;
-  text-transform: uppercase;
-  display: block;
-  font-weight: 600;
-  font-family: "Poppins", sans-serif;
+.position-box {
+  align-items: center;
+  background: var(--sanna-cream);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  display: flex;
+  gap: 14px;
+  min-height: 76px;
+  padding: 18px 20px;
+  width: 100%;
+}
+
+.position-box i {
+  align-items: center;
+  background: var(--sanna-mint);
+  border-radius: 50%;
+  color: var(--sanna-green);
+  display: inline-flex;
+  flex: 0 0 42px;
+  font-size: 20px;
+  height: 42px;
+  justify-content: center;
+  width: 42px;
+}
+
+.position-box span {
   color: var(--sanna-green-dark);
-}
-
-.skills .progress .skill .val {
-  float: right;
-  font-style: normal;
-}
-
-.skills .progress-bar-wrap {
-  background: rgba(40, 70, 35, 0.12);
-  border-radius: 999px;
-}
-
-.skills .progress-bar {
-  width: 1px;
-  height: 10px;
-  transition: 0.9s;
-  background-color: var(--sanna-green);
-  border-radius: 999px;
+  font-family: "Poppins", sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 1.25;
 }
 
 /*--------------------------------------------------------------
@@ -794,6 +779,21 @@ section .container + .container {
   height: 48px;
   object-fit: contain;
   padding-right: 0;
+}
+
+.skills-grid .icon-box .brand-icons {
+  align-items: center;
+  display: grid;
+  flex: 0 0 48px;
+  gap: 4px;
+  grid-template-columns: repeat(2, 22px);
+  justify-content: center;
+  width: 48px;
+}
+
+.skills-grid .icon-box .brand-icons img {
+  height: 22px;
+  width: 22px;
 }
 
 .skills-grid .icon-box h3 {
