@@ -1019,68 +1019,27 @@ section .container + .container {
 
 .company-logo {
   align-items: center;
-  background: var(--logo-bg, var(--sanna-cream));
-  border: 1px solid var(--logo-line, var(--line));
+  background: #fff;
+  border: 1px solid var(--line);
   border-radius: 14px;
-  color: var(--logo-color, var(--sanna-green-dark));
   display: inline-flex;
   flex: 0 0 78px;
-  font-family: "Poppins", sans-serif;
-  font-size: 15px;
-  font-weight: 800;
   height: 54px;
   justify-content: center;
-  letter-spacing: 0;
-  line-height: 1;
-  padding: 0 10px;
-  text-align: center;
-  text-transform: none;
+  overflow: hidden;
+  padding: 8px;
 }
 
-.company-logo--sanna {
-  --logo-bg: #efffed;
-  --logo-color: #00af50;
-  --logo-line: rgba(0, 175, 80, 0.24);
-  font-size: 14px;
+.company-logo--dark {
+  background: #171717;
+  border-color: rgba(0, 0, 0, 0.18);
 }
 
-.company-logo--crisol {
-  --logo-bg: #fff7d6;
-  --logo-color: #24468d;
-  --logo-line: rgba(244, 190, 20, 0.42);
-}
-
-.company-logo--indra {
-  --logo-bg: #eff5ff;
-  --logo-color: #1d4f91;
-  --logo-line: rgba(29, 79, 145, 0.2);
-}
-
-.company-logo--mml {
-  --logo-bg: #f1f5ff;
-  --logo-color: #24335f;
-  --logo-line: rgba(36, 51, 95, 0.18);
-}
-
-.company-logo--attach {
-  --logo-bg: #eef7ff;
-  --logo-color: #1b7fbe;
-  --logo-line: rgba(27, 127, 190, 0.22);
-  font-size: 13px;
-}
-
-.company-logo--kandavu {
-  --logo-bg: #fff0e8;
-  --logo-color: #e4572e;
-  --logo-line: rgba(228, 87, 46, 0.22);
-  font-size: 22px;
-}
-
-.company-logo--cima {
-  --logo-bg: #f1fff6;
-  --logo-color: #16834d;
-  --logo-line: rgba(22, 131, 77, 0.22);
-  font-size: 13px;
+.company-logo img {
+  display: block;
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain;
 }
 
 .role-grid {
