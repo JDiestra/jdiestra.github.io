@@ -1035,6 +1035,11 @@ section .container + .container {
   border-color: rgba(0, 0, 0, 0.18);
 }
 
+.company-logo--cima {
+  background: #0b3558;
+  border-color: rgba(11, 53, 88, 0.28);
+}
+
 .company-logo img {
   display: block;
   max-height: 100%;
@@ -1149,7 +1154,7 @@ section .container + .container {
   }
 }
 
-.resume-support .support-box {
+.about-support .support-box {
   background: var(--sanna-white);
   border: 1px solid var(--line);
   border-radius: 18px;
@@ -1157,19 +1162,19 @@ section .container + .container {
   padding: 24px;
 }
 
-.resume-support h3 {
+.about-support h3 {
   color: var(--sanna-green-dark);
   font-size: 20px;
   font-weight: 700;
   margin-bottom: 16px;
 }
 
-.resume-support ul {
+.about-support ul {
   margin: 0;
   padding-left: 18px;
 }
 
-.resume-support li {
+.about-support li {
   color: var(--muted);
   padding-bottom: 10px;
 }
